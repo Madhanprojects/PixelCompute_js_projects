@@ -1,0 +1,96 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.header{
+    width: auto;
+    background-color: purple;
+    height: 70px;
+}
+h1 {
+  font-family: 'DM Serif', cursive;
+  color: #333;
+}
+.container{
+    padding: 30px;
+    min-height: 400px;
+    min-width: 300px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: #f1f1f1;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.55);
+}
+#noteSection{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;  
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.noteContainer{
+    font-family: 'DM Serif', cursive;
+    position: relative;
+    width: 280px;
+    min-height: 140px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+.removeBtn{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+    
+#inputContainer {
+    position: relative;
+    margin: 50px;
+    min-width: 280px;
+    min-height: 140px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#note-text {
+    padding-top: 10px;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 140px;
+    box-sizing: border-box;
+    padding-bottom: 40px;  
+    background-color: #fefec0;
+    border: none;
+}
+
+#add-button {
+    display: flex;
+    font-size: 34px;
+    color: #11ff00;
+    background-color:transparent;
+    border: none;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 50px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#add-button:hover {
+    font-size: 40px;
+}
+
+.search{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
