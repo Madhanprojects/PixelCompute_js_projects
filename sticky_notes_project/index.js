@@ -9,7 +9,7 @@ addButton.addEventListener('click',addNote);
 
 function addNote(){
 
-    let note=String(input.value.trim());
+    let note=input.value.trim();
 
     if(note=="") return;
 
