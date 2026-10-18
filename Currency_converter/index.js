@@ -16,19 +16,19 @@ const apiReq = async () => {
     );
     const data = await response.json();
 
-    const currencies = new Set();
+    const currenciesArray = [];
     console.log(data.data.objects);
 
     for(let i=0;i<data.data.objects.length;i++){
 
         for(let j=0;j<data.data.objects[i].currencies.length;j++){
+            
             const currency=data.data.objects[i].currencies[j];
 
-            currencies.add(currency.code+'-'+currency.name);
+            if(!currenciesArray.includes(currency.code+'-'+currency.name)) currenciesArray.push(currency.code+'-'+currency.name);
 
         }
     }
-    const currenciesArray=Array.from(currencies);
     const currency=document.querySelectorAll('select');
     for(let i=0;i<currenciesArray.length;i++){
 
