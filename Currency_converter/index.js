@@ -10,7 +10,7 @@ const apiReq = async () => {
         'https://api.restcountries.com/countries/v5?limit=100',
         {
             headers: {
-                'Authorization': 'Bearer API_KEY'
+                'Authorization': 'Bearer rc_live_df0cede67dc44c7f92c8992dddb49907'
             }
         }
     );
@@ -19,16 +19,13 @@ const apiReq = async () => {
     const currenciesArray = [];
     console.log(data.data.objects);
 
-    for(let i=0;i<data.data.objects.length;i++){
-
-        for(let j=0;j<data.data.objects[i].currencies.length;j++){
-            
-            const currency=data.data.objects[i].currencies[j];
-
-            if(!currenciesArray.includes(currency.code+'-'+currency.name)) currenciesArray.push(currency.code+'-'+currency.name);
-
-        }
-    }
+    data.data.objects.forEach((object) => {
+        object.currencies.forEach((currency) => {
+            if (!currenciesArray.includes(currency.code + '-' + currency.name)) {
+                currenciesArray.push(currency.code + '-' + currency.name);
+            }
+        });
+    });
     const currency=document.querySelectorAll('select');
     for(let i=0;i<currenciesArray.length;i++){
 
@@ -69,7 +66,7 @@ async function converter(){
 
     console.log(toValue);
 
-    const response=await fetch(` https://v6.exchangerate-api.com/v6/API_KEY/latest/${fromValue}`);
+    const response=await fetch(`  https://v6.exchangerate-api.com/v6/a0bf8e54ec16cdbb26a56b64/latest/${fromValue}`);
 
     const data=await response.json();
 
