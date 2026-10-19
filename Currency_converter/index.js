@@ -10,7 +10,7 @@ const apiReq = async () => {
         'https://api.restcountries.com/countries/v5?limit=100',
         {
             headers: {
-                'Authorization': 'Bearer rc_live_df0cede67dc44c7f92c8992dddb49907'
+                'Authorization': 'Bearer apiKey'
             }
         }
     );
@@ -66,7 +66,7 @@ async function converter(){
 
     console.log(toValue);
 
-    const response=await fetch(`  https://v6.exchangerate-api.com/v6/a0bf8e54ec16cdbb26a56b64/latest/${fromValue}`);
+    const response=await fetch(`  https://v6.exchangerate-api.com/v6/apiKey/latest/${fromValue}`);
 
     const data=await response.json();
 
