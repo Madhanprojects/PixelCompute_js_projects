@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+
+    
+        <header>
+            <div>
+                <span><h1>
+                To-Do List
+                </h1></span>
+                <input id="searchTask"  type="text" placeholder="search for the tasks">
+            </div>
+        </header>
+        
+        
+        <div id="To-Do-Container">
+            
+            <div class="inputDiv">
+                <input id="inputTask" type="text" placeholder="Type your text here">
+                <input id="taskDate" type="date">
+                <input id="taskTime" type="time">
+                <button id="taskSubmit" type="submit">ADD Task</button>
+            </div>
+
+            <div id="taskDateSection">
+                <h1 class="taskHeaders">
+                    Due Tasks
+                </h1>
+                <div id="emptyState">
+                    No tasks found!
+                </div>
+                <div  id="prevTasks"></div>
+                <div id="todaySection">
+                    <h2 class="taskHeaders">Today</h2>
+                    <div id="todayTasks"></div>
+                </div>
+
+                <div id="futureSection">
+                    <h2 class="taskHeaders">Upcoming Tasks</h2>
+                    <div id="futureTasks"></div>
+                </div>
+            </div>
+        </div>
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>

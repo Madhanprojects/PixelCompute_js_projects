@@ -1,0 +1,134 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f7f8fc ;
+}
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #3f51b5;
+    color: white;
+    padding: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.taskItems {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+#searchTask {
+    width: 245px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.inputDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+}
+
+#To-Do-Container {
+    background-color: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+input{
+    background-color: white;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+#taskSubmit{
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    cursor: pointer;
+    align-self: center;
+
+
+}
+.taskActions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+}
+#taskSubmit:hover{
+    background-color:#388e3c;
+}
+#taskDateSection{
+    background-color: #e8f5e9;
+    border-radius: 12px;
+    padding: 30px;
+}
+.innerDiv{
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    display: inline-block;
+}
+.taskItems {
+    border-bottom: 1px solid #ddd;
+}
+.editBtn {
+    background-color: #ffca28;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+.editBtn:hover{
+    background-color: #fbc02d;
+}
+.deleteBtn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+.deleteBtn:hover{
+    background-color: #d32f2f;
+}
+.taskHeaders{
+    color: #3f51b5;
+}
+
+#emptyState {
+    display: none;
+    background-color: #ffecb3;
+    color: #795548;
+    border: 1px solid #ffcc80;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+}
